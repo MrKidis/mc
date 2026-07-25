@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VoxelCraft</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="overlay">
+  <h1>VOXELCRAFT</h1>
+  <p class="version">v0.5 &middot; biomes &middot; caves &middot; ores &middot; sun &amp; stars &middot; sound</p>
+  <p class="start">Click to play</p>
+  <div class="controls">
+    <p>WASD move &middot; Shift sprint &middot; Space jump / swim</p>
+    <p>Hold left click to mine &middot; Right click place</p>
+    <p>Scroll wheel or 1-9 to pick block &middot; Q to unequip hand</p>
+  </div>
+</div>
+<div id="crosshair">+</div>
+<div id="hotbar"></div>
+<div id="water-tint"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

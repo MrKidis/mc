@@ -1,0 +1,12 @@
+html, body { margin: 0; padding: 0; overflow: hidden; height: 100%; background: #000; font-family: monospace; }
+#crosshair { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 24px; pointer-events: none; text-shadow: 0 0 2px #000; }
+#hotbar { position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; pointer-events: none; }
+.slot { width: 46px; height: 46px; border: 2px solid #999; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 10px; background: rgba(0,0,0,0.4); text-shadow: 0 0 2px #000; }
+.slot.active { border-color: #fff; background: rgba(255,255,255,0.25); transform: translateY(-3px); }
+#overlay { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; background: rgba(0,0,0,0.65); color: #fff; cursor: pointer; z-index: 10; text-align: center; }
+#overlay h1 { margin: 0; font-size: 48px; letter-spacing: 6px; text-shadow: 3px 3px 0 #2a2a2a; }
+#overlay .version { margin: 0; opacity: 0.7; }
+#overlay .start { margin: 8px 0; font-size: 20px; animation: pulse 1.4s infinite; }
+#overlay .controls p { margin: 2px 0; opacity: 0.85; }
+#water-tint { position: fixed; inset: 0; background: rgba(30, 80, 180, 0.35); display: none; pointer-events: none; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
